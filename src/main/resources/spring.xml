@@ -4,12 +4,12 @@
        xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
-
-    <bean id="doctor" class="demo.Doctor">
+    <context:component-scan base-package="demo"></context:component-scan>
+<!--    <bean id="doctor" class="demo.Doctor">-->
 <!--        <property name="qualification" value="MBBS"></property>-->
 <!--        use Ref to reference the object-->
 <!--        <property name="nurse" ref="nurse"></property>-->
-        <constructor-arg value="MBBS"></constructor-arg>
-    </bean>
-    <bean id="nurse" class="demo.Nurse"></bean>
+<!--        <constructor-arg value="MBBS"></constructor-arg>-->
+<!--    </bean>-->
+<!--    <bean id="nurse" class="demo.Nurse"></bean>-->
 </beans>
